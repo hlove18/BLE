@@ -19,7 +19,8 @@
 
 document.addEventListener("turbolinks:load", function() {
 	Prism.highlightAll();
-	tinymce.remove();	//remove previous intances of tinymce
+	// tinymce.remove();	//remove previous intances of tinymce
+	// ^commented this line out March 2022 because it was preventing the sidebar dropdowns from working
 	tinymce.init({
 		selector:'textarea#post_body',
 		plugins: "codesample code charmap image imagetools link media table toc lists advlist",
