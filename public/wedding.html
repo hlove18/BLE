@@ -7,6 +7,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="/Wedding_Site_Images/favicon.ico">
+
+	<!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 	<style>
     .imgbox {
       display: grid;
@@ -72,9 +76,16 @@
 			font-size: 18px;
 		}
 
-		.h2-colorbar {
+		.colorbar {
 			color: #33363b;
 			border-bottom: 0px;
+			font-size: 30px;
+			/*vertical-align: middle;
+			display: inline-block;*/
+			/*position: absolute;
+			top: 50%;*/
+			display: flex;
+			align-items: center;
 		}
 
 		.details-o {
@@ -143,7 +154,10 @@
 		summary::-webkit-details-marker {
 		  display: none;
 		}
-    </style>
+  </style>
+
+  <!-- Bootstrap mobile first -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body style="font-family:'Space Mono'; background-color:#33363b; color: #f5f5f5;">
@@ -154,11 +168,15 @@
     	<img class="center-fit" src='Wedding_Site_Images/DSC_0068.jpeg'>
 		</div>
 
+		<h2>What</h2>
+			<p>We are getting married in a courthouse and want to celebrate with all of you on the following weekend.</p>
+
 		<h2>When</h2>
 			<p>Sunday, August 14, 2022 @ 6pm</p>
 
 		<h2>Where</h2>	
 			<p><a href="https://www.phipps.conservatory.org/" target="_blank" rel="noopener noreferrer">Phipps Conservatory and Botanical Gardens</a> <br> One Schenley Park	<br> Pittsburgh, PA 15213</p>
+			<br>
 
 			<center><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12146.551725052957!2d-79.95671283173867!3d40.43901556220777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f189f8429905%3A0x28a12fe50786460d!2sPhipps%20Conservatory%20and%20Botanical%20Gardens!5e0!3m2!1sen!2sus!4v1646260444060!5m2!1sen!2sus"></iframe></center>
 
@@ -172,7 +190,9 @@
 		<details class="details-o">
 			<summary class="summary-o">
 				&nbsp;&nbsp;
-				<h2 class="h2-colorbar">Hotel Blocks</h2>
+				<div class="colorbar">
+					<span class="hidden-xs">Hotel Blocks</span>
+					<span class="visible-xs">Hotels</span></div>
 				<span class="icon">&#128719;</span>
 				&nbsp;&nbsp;&nbsp;&nbsp;
 			</summary>
@@ -194,7 +214,7 @@
 		<details class="details-y">
 			<summary class="summary-y">
 				&nbsp;&nbsp;
-				<h2 class="h2-colorbar">Registry</h2>
+				<div class="colorbar">Registry</div>
 				<span class="icon"><!-- <i class="arrow left"></i> --> <!-- &#9664;-->&#127873;</span>
 				&nbsp;&nbsp;&nbsp;&nbsp;
 			</summary>
@@ -212,7 +232,7 @@
 		<details class="details-g">
 			<summary class="summary-g">
 				&nbsp;&nbsp;
-				<h2 class="h2-colorbar">Travel</h2>
+				<div class="colorbar">Travel</div>
 				<span class="icon"><!-- &#128072; -->&#128663;</span>
 				&nbsp;&nbsp;&nbsp;&nbsp;
 			</summary>
@@ -229,7 +249,10 @@
 		<details class="details-b">
 		  <summary class="summary-b">
 				&nbsp;&nbsp;
-		    <h2 class="h2-colorbar">See Pittsburgh</h2>
+		    <div class="colorbar">
+		    	<span class="hidden-xs">See Pittsburgh</span>
+		    	<span class="visible-xs">See Pitt</span>
+		    </div>
 		    <span class="icon">&#128758;</span>
 				&nbsp;&nbsp;&nbsp;&nbsp;
 		  </summary>
