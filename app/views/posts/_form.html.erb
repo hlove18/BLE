@@ -22,7 +22,7 @@
         <div class="col col-md-3">
             <br>
             <%= f.label "Banner - 825x200" %>
-            <%= f.file_field :image %>
+            <%= f.file_field :image, class: "form-control" %>
             <% if not @post.image.attached? %>
                 <span class="glyphicon glyphicon-remove-circle"></span> No File Uploaded.
             <% else %>
@@ -31,7 +31,7 @@
 
             <br> <br>
             <%= f.label "Thumbnail - 120x120" %>
-            <%= f.file_field :thumbnail %>
+            <%= f.file_field :thumbnail, class: "form-control" %>
             <% if not @post.thumbnail.attached? %>
                 <span class="glyphicon glyphicon-remove-circle"></span> No File Uploaded.
             <% else %>
@@ -88,7 +88,7 @@
     <% end %>
     <br>
     <%= f.label "Add uploads" %> <i class="fa fa-upload" aria-hidden="true"></i>
-    <%= f.file_field :uploads, multiple: true, direct_upload: true %> 
+    <%= f.file_field :uploads, multiple: true, direct_upload: true, class: "form-control" %> 
     <br>
 
 

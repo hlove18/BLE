@@ -17,17 +17,23 @@
 //= require_tree .
 //= require activestorage
 
+console.log('hello')
+
 document.addEventListener("turbolinks:load", function() {
 	Prism.highlightAll();
 	// tinymce.remove();	//remove previous intances of tinymce
 	// ^commented this line out March 2022 because it was preventing the sidebar dropdowns from working
 	tinymce.init({
 		selector:'textarea#post_body',
-		plugins: "codesample code charmap image imagetools link media table toc lists advlist",
-		toolbar: 'undo redo styleselect | fontselect fontsizeselect | bold italic | removeformat | alignleft aligncenter alignright numlist bullist outdent indent | table | code codesample codeSC | imageupload | image media link charmap |',
+		plugins: "advlist codesample code charmap image link lists media table",
+		toolbar1: 'undo redo styles | fontfamily | fontsize | bold italic removeformat ',
+		toolbar2: 'alignleft aligncenter alignright | numlist bullist outdent indent | table | code codesample codeSC | imageupload | image media link charmap |',
 		height: 500,
-		skin: false,
-		//skin_url: '/app/assets/stylesheets/darkmode',
+		// skin: 'false',
+		skin_url: "/assets/darkmode",
+		// skin_url: "<%= asset_path('darkmode')%>",
+		// skin_url: "<%= asset_path 'app/assets/stylesheets/darkmode' %>",
+		// skin_url: "<%= asset_path 'darkmode' %>",
 		content_css: [
 			"https://fonts.googleapis.com/css?family=Space+Mono",
 			"https://fonts.googleapis.com/css?family=Titillium+Web:400,600",
@@ -73,25 +79,24 @@ document.addEventListener("turbolinks:load", function() {
             });
 
             //Image Upload
-            editor.addButton( 'imageupload', {
+            editor.ui.registry.addButton( 'imageupload', {
                 text:"Upload Image",
-                icon: false,
-                onclick: function(e) {
+                onAction: function(e) {
                     inp.trigger('click');
                 }
             });
 
             //Inline code
-            editor.addButton('codeSC', {
+            editor.ui.registry.addButton('codeSC', {
 		      	text: '<code>',
-		      	icon: false,
-		      	onclick: function () {
+		      	onAction: function () {
 		        	editor.insertContent('<code>Text inside code</code>');
 		      	}
 		    });
 
         }
   	})		//load it again
+
 	archives_dropdown();
 	// For updated archives dropdown
 	dropdown();
