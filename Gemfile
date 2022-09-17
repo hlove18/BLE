@@ -2,10 +2,12 @@ source 'http://rubygems.org'
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.0'
+# ruby '2.5.0'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.1'
+# gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 6.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -21,7 +23,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 # gem 'paperclip', '~> 5.0.0.beta1'
 gem 'devise', '~> 4.4', '>= 4.4.3'
-gem 'rails_admin', '~> 1.0'
+# gem 'rails_admin', '~> 1.0'
+gem 'rails_admin', '~> 3.0'
 gem 'annotate'
 gem 'simple_form'
 gem "aws-sdk-s3", require: false
@@ -32,6 +35,8 @@ gem 'friendly_id', '~> 5.2', '>= 5.2.4' # Note: You MUST use 5.0.0 or greater fo
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
+gem 'jquery-rails'
+gem 'image_processing', '~> 1.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
