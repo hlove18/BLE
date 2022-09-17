@@ -19,7 +19,7 @@ gem 'puma', '~> 3.11'
 # Use Scout gem for memory monitoring.  Added 6/13/2018
 gem 'scout_apm'
 
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sass-rails', '>= 3.2'
 # gem 'paperclip', '~> 5.0.0.beta1'
 gem 'devise', '~> 4.4', '>= 4.4.3'
