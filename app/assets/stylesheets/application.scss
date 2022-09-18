@@ -438,13 +438,15 @@ body * {
 @media (min-width: 1200px) {
     /* Show the slider */
     #title {
-        margin-top: 70px;
+        /*margin-top: 70px;*/
+        margin-top: 140px;
     }
     /* Show post title banners */
     .title-banner {
         position: absolute;
         z-index: -1;
-        margin-top: -60px;
+        /*margin-top: -60px;*/
+        margin-top: -130px;
         opacity: 0.5;
         -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
         border-radius: 5px;
