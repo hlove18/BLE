@@ -1,0 +1,43 @@
+<% provide(:page_title, 'Bibit') %>
+
+<div class="page-header">
+    <h5 id="breadcrums"><i class="fa fa-folder-open-o"></i>&nbsp;&nbsp;HOME / <%= yield(:page_title).upcase %> </h5>
+</div>
+
+<h1> I'm Bibit Bianchini. </h1>
+
+<div class="row">
+	<div class="col col-md-7" style="font-size:14px">
+		<h3>I'm a roboticist,</h3>
+		<ul>
+			<li>a PhD student,</li>
+			<li>a tinkerer,</li>
+			<li>a born-and-raised Pittsburgher,</li>
+			<li>a lover of the outdoors,</li>
+			<li>a dog mom,</li>
+			<li>a believer that robots can help people.</li>
+		</ul>
+
+		<p>
+			I am interested in what it takes to get robots out of labs and into the world.  Specifically, I am currently working on how to build dynamics models of novel objects as quickly as possible, so that we can utilize mature model predictive control techniques for robotic manipulation in the wild.
+			<br><br>
+			I share this site with my partner, Henry.  My individual projects are below, but you can also see <%= link_to 'Henry\'s work', henry_path %> and <%= link_to 'our shared collaborations', bianchini_love_posts_path %>.
+		</p>
+
+		<!-- <%= link_to "Resume", "Resumes/Bibit_Resume.pdf", class: "btn btn-default", :target => "_blank" %> -->
+		<%= link_to "http://www.linkedin.com/in/ebianchini", class: "btn btn-default", :target => "_blank" do %>
+				LinkedIn&nbsp;<i class="fa fa-linkedin-square"></i>
+		<% end %>
+		<%= link_to "https://github.com/ebianchi", class: "btn btn-default", :target => "_blank" do %>
+				GitHub&nbsp;<i class="fa fa-github-square"></i></i>
+		<% end %> <br> <br>
+		<br>
+	</div>
+	<div class="col col-md-5" style="overflow: hidden">
+		<%=image_tag("bibit_small.jpg", alt: "us", width: "100%")%>
+	</div>
+
+</div>
+
+<h3>Bibit's Project Posts</h3>
+<%= render partial: "posts/display_posts", locals: {posts: @posts} %>
