@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     
   get 'about' => 'pages#about', as: :about
   get 'contact' => 'pages#contact', as: :contact
+  get 'bibit' => 'pages#bibit', as: :bibit
+  get 'henry' => 'pages#henry', as: :henry
 
   resources :posts do
     put 'publish' => 'posts#publish', on: :member
@@ -15,6 +17,8 @@ Rails.application.routes.draw do
     get 'bianchini' => 'posts#bianchini', :on => :collection
     get 'love' => 'posts#love', :on => :collection
     get 'bianchini_love' => 'posts#bianchini_love', :on => :collection
+    get 'bibit' => 'posts#bianchini', :on => :collection
+    get 'henry' => 'posts#love', :on => :collection
     # Active storage delete upload
     member do
       delete :delete_post_upload
