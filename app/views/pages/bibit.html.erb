@@ -24,7 +24,9 @@
 			I share this site with my partner, Henry.  My individual projects are below, but you can also see <%= link_to 'Henry\'s work', henry_path %> and <%= link_to 'our shared collaborations', bianchini_love_posts_path %>.
 		</p>
 
-		<!-- <%= link_to "Resume", "Resumes/Bibit_Resume.pdf", class: "btn btn-default", :target => "_blank" %> -->
+		<%= link_to "Resumes/bibit_resume.pdf", class: "btn btn-default", :target => "_blank" do %>
+				Resume&nbsp;<i class="fa fa-file-text-o"></i>
+		<% end %>
 		<%= link_to "http://www.linkedin.com/in/ebianchini", class: "btn btn-default", :target => "_blank" do %>
 				LinkedIn&nbsp;<i class="fa fa-linkedin-square"></i>
 		<% end %>
