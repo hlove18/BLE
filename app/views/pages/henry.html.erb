@@ -10,7 +10,7 @@
 	<div class="col col-md-7" style="font-size:14px">
 		<h3>I'm an electrical engineer,</h3>
 		<ul>
-			<li>a PhD student,</li>
+			<li>a PhD student in UPenn's <a href="https://www.seas.upenn.edu/~firooz/" target="_blank" rel="noopener noreferrer">EPM Lab</a>,</li>
 			<li>a maker,</li>
 			<li>a violinist,</li>
 			<li>a runner,</li>
@@ -24,17 +24,19 @@
 			I share this site with my partner, Bibit.  My individual projects are below, but you can also see <%= link_to 'Bibit\'s work', bibit_path %> and <%= link_to 'our shared collaborations', bianchini_love_posts_path %>.
 		</p>
 
-		<!-- <%= link_to "Resume", "Resumes/Henry_Resume.pdf", class: "btn btn-default", :target => "_blank" %> -->
-		<%= link_to "http://www.linkedin.com/in/henrylove", class: "btn btn-default", :target => "_blank" do %>
-				LinkedIn&nbsp;<i class="fa fa-linkedin-square"></i>
-		<% end %>
-		<%= link_to "https://github.com/hlove18", class: "btn btn-default", :target => "_blank" do %>
-				GitHub&nbsp;<i class="fa fa-github-square"></i></i>
-		<% end %>
-		<%= link_to "mailto:hwlove@seas.upenn.edu", class: "btn btn-default", :target => "_blank" do %>
-				Email&nbsp;<i class="fa fa-envelope-o"></i></i>
-		<% end %> <br> <br>
-		<br>
+		<div style="line-height:2.4">
+			<!-- <%= link_to "Resume", "Resumes/Henry_Resume.pdf", class: "btn btn-default", :target => "_blank" %> -->
+			<%= link_to "http://www.linkedin.com/in/henrylove", class: "btn btn-default", :target => "_blank" do %>
+					LinkedIn&nbsp;<i class="fa fa-linkedin-square"></i>
+			<% end %>
+			<%= link_to "https://github.com/hlove18", class: "btn btn-default", :target => "_blank" do %>
+					GitHub&nbsp;<i class="fa fa-github-square"></i></i>
+			<% end %>
+			<%= link_to "mailto:hwlove@seas.upenn.edu", class: "btn btn-default", :target => "_blank" do %>
+					Email&nbsp;<i class="fa fa-envelope-o"></i></i>
+			<% end %> <br> <br>
+		</div>
+
 	</div>
 	<div class="col col-md-5" style="overflow: hidden">
 		<%=image_tag("henry_hank_small.jpg", alt: "us", width: "100%")%>

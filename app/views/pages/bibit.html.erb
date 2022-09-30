@@ -10,7 +10,7 @@
 	<div class="col col-md-7" style="font-size:14px">
 		<h3>I'm a roboticist,</h3>
 		<ul>
-			<li>a PhD student,</li>
+			<li>a PhD student in UPenn's <a href="https://dair.seas.upenn.edu/" target="_blank" rel="noopener noreferrer">DAIR Lab</a> and <a href="https://kodlab.seas.upenn.edu/" target="_blank" rel="noopener noreferrer">Kod*lab</a>,</li>
 			<li>a tinkerer,</li>
 			<li>a born-and-raised Pittsburgher,</li>
 			<li>a lover of the outdoors,</li>
@@ -24,19 +24,23 @@
 			I share this site with my partner, Henry.  My individual projects are below, but you can also see <%= link_to 'Henry\'s work', henry_path %> and <%= link_to 'our shared collaborations', bianchini_love_posts_path %>.
 		</p>
 
-		<%= link_to "Resumes/bibit_resume.pdf", class: "btn btn-default", :target => "_blank" do %>
-				Resumé&nbsp;<i class="fa fa-file-text-o"></i>
-		<% end %>
-		<%= link_to "http://www.linkedin.com/in/ebianchini", class: "btn btn-default", :target => "_blank" do %>
-				LinkedIn&nbsp;<i class="fa fa-linkedin-square"></i>
-		<% end %>
-		<%= link_to "https://github.com/ebianchi", class: "btn btn-default", :target => "_blank" do %>
-				GitHub&nbsp;<i class="fa fa-github-square"></i></i>
-		<% end %>
-		<%= link_to "mailto:bibit@seas.upenn.edu", class: "btn btn-default", :target => "_blank" do %>
-				Email&nbsp;<i class="fa fa-envelope-o"></i></i>
-		<% end %> <br> <br>
-		<br>
+		<div style="line-height:2.4">
+			<%= link_to "Resumes/bibit_resume.pdf", class: "btn btn-default", :target => "_blank" do %>
+					Resumé&nbsp;<i class="fa fa-file-text-o"></i>
+			<% end %>
+			<%= link_to "https://scholar.google.com/citations?user=lVj0WaQAAAAJ&hl=en", class: "btn btn-default", :target => "_blank" do %>
+					Publications&nbsp;<i class="fa fa-graduation-cap"></i></i>
+			<% end %>
+			<%= link_to "http://www.linkedin.com/in/ebianchini", class: "btn btn-default", :target => "_blank" do %>
+					LinkedIn&nbsp;<i class="fa fa-linkedin-square"></i>
+			<% end %>
+			<%= link_to "https://github.com/ebianchi", class: "btn btn-default", :target => "_blank" do %>
+					GitHub&nbsp;<i class="fa fa-github-square"></i></i>
+			<% end %>
+			<%= link_to "mailto:bibit@seas.upenn.edu", class: "btn btn-default", :target => "_blank" do %>
+					Email&nbsp;<i class="fa fa-envelope-o"></i></i>
+			<% end %> <br> <br>
+		</div>
 	</div>
 	<div class="col col-md-5" style="overflow: hidden">
 		<%=image_tag("bibit_small.jpg", alt: "us", width: "100%")%>
