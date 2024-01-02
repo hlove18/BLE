@@ -23,14 +23,16 @@ document.addEventListener("turbolinks:load", function() {
 	Prism.highlightAll();
 	// tinymce.remove();	//remove previous intances of tinymce
 	// ^commented this line out March 2022 because it was preventing the sidebar dropdowns from working
+	// tinyMCE.baseURL = "PATH/TO/tinymce/directory/";
 	tinymce.init({
 		selector:'textarea#post_body',
+		//base_url:"/assets/stylesheets/darkmode",
 		plugins: "advlist codesample code charmap image link lists media table",
 		toolbar1: 'undo redo styles | fontfamily | fontsize | bold italic removeformat ',
 		toolbar2: 'alignleft aligncenter alignright | numlist bullist outdent indent | table | code codesample codeSC | imageupload | image media link charmap |',
 		height: 500,
 		// skin: 'false',
-		skin_url: "/assets/darkmode",
+		//skin_url: "/assets/darkmode",
 		// skin_url: "<%= asset_path('darkmode')%>",
 		// skin_url: "<%= asset_path 'app/assets/stylesheets/darkmode' %>",
 		// skin_url: "<%= asset_path 'darkmode' %>",
