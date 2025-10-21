@@ -4,6 +4,10 @@
     <h5 id="breadcrums"><i class="fa fa-folder-open-o"></i>&nbsp;&nbsp;HOME / <%= yield(:page_title).upcase %> </h5>
 </div>
 
+<video autobuffer muted autoplay loop style="width: 100%; border-radius: 15px;">
+	<source id="mp4" src="images/bianchini_robot.mp4" type="video/mp4">
+</video>
+
 <h1> I'm Bibit Bianchini. </h1>
 
 <div class="row">
@@ -19,36 +23,45 @@
 		</ul>
 
 		<p>
-			I am interested in data-efficient, dynamic robotic manipulation in contact-rich settings. Specifically, I work on model predictive control and building dynamics models of novel objects as quickly as possible, with the aim of enabling robotic manipulation in the wild.  I believe in and work towards a future where robots are everyday appliances.
-			<br><br>
-			I share this site with my partner, Henry.  My individual projects are below, but you can also see <%= link_to 'Henry\'s work', henry_path %> and <%= link_to 'our shared collaborations', bianchini_love_posts_path %>.
+			I am interested in data-efficient, dynamic robotic manipulation in
+			contact-rich settings. Specifically, I work on model predictive
+			control and building dynamics models of novel objects as quickly as
+			possible, with the aim of enabling robotic manipulation in the wild.
+			I believe in and work towards a future where robots are everyday
+			appliances.
+			<br>
 		</p>
-
-		<div style="line-height:2.4">
-			<%= link_to "Resumes/bibit_resume.pdf", class: "btn btn-default", :target => "_blank" do %>
-					Resumé&nbsp;<i class="fa fa-file-text-o"></i>
-			<% end %>
-			<%= link_to "https://scholar.google.com/citations?user=lVj0WaQAAAAJ&hl=en", class: "btn btn-default", :target => "_blank" do %>
-					Publications&nbsp;<i class="fa fa-graduation-cap"></i></i>
-			<% end %>
-			<%= link_to "http://www.linkedin.com/in/ebianchini", class: "btn btn-default", :target => "_blank" do %>
-					LinkedIn&nbsp;<i class="fa fa-linkedin-square"></i>
-			<% end %>
-			<%= link_to "https://github.com/ebianchi", class: "btn btn-default", :target => "_blank" do %>
-					GitHub&nbsp;<i class="fa fa-github-square"></i></i>
-			<% end %>
-			<%= link_to "https://www.youtube.com/channel/UCWCJts7kiXEWmdD62Ly7LGA", class: "btn btn-default", :target => "_blank" do %>
-					YouTube&nbsp;<i class="fa fa-youtube"></i></i>
-			<% end %>
-			<%= link_to "mailto:bibit@seas.upenn.edu", class: "btn btn-default" do %>
-					Email&nbsp;<i class="fa fa-envelope-o"></i></i>
-			<% end %> <br> <br>
-		</div>
 	</div>
 	<div class="col col-md-5" style="overflow: hidden">
-		<%=image_tag("bibit_small.jpg", alt: "us", width: "100%")%>
+		<%=image_tag("bibit_small.jpg", alt: "us", width: "100%", style: "border-radius: 15px;")%>
 	</div>
 
+</div>
+
+<p>
+	I share this site with my partner, Henry.  My individual projects are below, but you can also see <%= link_to 'Henry\'s work', henry_path %> and <%= link_to 'our shared collaborations', bianchini_love_posts_path %>.
+</p>
+
+<h3> I'm on the job market in fall 2025. </h3>
+<div style="line-height:2.4">
+	<%= link_to "Resumes/bibit_resume.pdf", class: "btn btn-default", :target => "_blank" do %>
+			Resumé&nbsp;<i class="fa fa-file-text-o"></i>
+	<% end %>
+	<%= link_to "https://scholar.google.com/citations?user=lVj0WaQAAAAJ&hl=en", class: "btn btn-default", :target => "_blank" do %>
+			Publications&nbsp;<i class="fa fa-graduation-cap"></i></i>
+	<% end %>
+	<%= link_to "http://www.linkedin.com/in/ebianchini", class: "btn btn-default", :target => "_blank" do %>
+			LinkedIn&nbsp;<i class="fa fa-linkedin-square"></i>
+	<% end %>
+	<%= link_to "https://github.com/ebianchi", class: "btn btn-default", :target => "_blank" do %>
+			GitHub&nbsp;<i class="fa fa-github-square"></i></i>
+	<% end %>
+	<%= link_to "https://www.youtube.com/channel/UCWCJts7kiXEWmdD62Ly7LGA", class: "btn btn-default", :target => "_blank" do %>
+			YouTube&nbsp;<i class="fa fa-youtube"></i></i>
+	<% end %>
+	<%= link_to "mailto:bibit@seas.upenn.edu", class: "btn btn-default" do %>
+			Email&nbsp;<i class="fa fa-envelope-o"></i></i>
+	<% end %> <br> <br>
 </div>
 
 <h3>Bibit's Project Posts</h3>
